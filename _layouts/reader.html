@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="build/css/lib.css">
+  <link rel="stylesheet" href="build/css/bible.css">
+</head>
+
+<body id="mybody" onload="setachap()">
+  <a name="top"></a>
+  <div class="toolbar">
+    <div class="logo">{{ page.title }}</div>
+    <form class="chapter-body" method="post" name="Reading" onsubmit="readchapter(' ', document.Reading.na.selectedIndex, document.Reading.chap.selectedIndex); return false;" action="">
+      <select class="book-selector form-elem" name="na" onchange="setchap(Reading, this.selectedIndex, 1)">
+        <option value="0" selected="selected">{{ page.locbookname0 }}</option>
+        <option value="1">{{ page.locbookname1 }}</option>
+        <option value="2">{{ page.locbookname2 }}</option>
+        <option value="3">{{ page.locbookname3 }}</option>
+        <option value="4">{{ page.locbookname4 }}</option>
+        <option value="5">{{ page.locbookname5 }}</option>
+        <option value="6">{{ page.locbookname6 }}</option>
+        <option value="7">{{ page.locbookname7 }}</option>
+        <option value="8">{{ page.locbookname8 }}</option>
+        <option value="9">{{ page.locbookname9 }}</option>
+        <option value="10">{{ page.locbookname10 }}</option>
+        <option value="11">{{ page.locbookname11 }}</option>
+        <option value="12">{{ page.locbookname12 }}</option>
+        <option value="13">{{ page.locbookname13 }}</option>
+        <option value="14">{{ page.locbookname14 }}</option>
+        <option value="15">{{ page.locbookname15 }}</option>
+        <option value="16">{{ page.locbookname16 }}</option>
+        <option value="17">{{ page.locbookname17 }}</option>
+        <option value="18">{{ page.locbookname18 }}</option>
+        <option value="19">{{ page.locbookname19 }}</option>
+        <option value="20">{{ page.locbookname20 }}</option>
+        <option value="21">{{ page.locbookname21 }}</option>
+        <option value="22">{{ page.locbookname22 }}</option>
+        <option value="23">{{ page.locbookname23 }}</option>
+        <option value="24">{{ page.locbookname24 }}</option>
+        <option value="25">{{ page.locbookname25 }}</option>
+        <option value="26">{{ page.locbookname26 }}</option>
+        <option value="27">{{ page.locbookname27 }}</option>
+        <option value="28">{{ page.locbookname28 }}</option>
+        <option value="29">{{ page.locbookname29 }}</option>
+        <option value="30">{{ page.locbookname30 }}</option>
+        <option value="31">{{ page.locbookname31 }}</option>
+        <option value="32">{{ page.locbookname32 }}</option>
+        <option value="33">{{ page.locbookname33 }}</option>
+        <option value="34">{{ page.locbookname34 }}</option>
+        <option value="35">{{ page.locbookname35 }}</option>
+        <option value="36">{{ page.locbookname36 }}</option>
+        <option value="37">{{ page.locbookname37 }}</option>
+        <option value="38">{{ page.locbookname38 }}</option>
+        <option value="39">{{ page.locbookname39 }}</option>
+        <option value="40">{{ page.locbookname40 }}</option>
+        <option value="41">{{ page.locbookname41 }}</option>
+        <option value="42">{{ page.locbookname42 }}</option>
+        <option value="43">{{ page.locbookname43 }}</option>
+        <option value="44">{{ page.locbookname44 }}</option>
+        <option value="45">{{ page.locbookname45 }}</option>
+        <option value="46">{{ page.locbookname46 }}</option>
+        <option value="47">{{ page.locbookname47 }}</option>
+        <option value="48">{{ page.locbookname48 }}</option>
+        <option value="49">{{ page.locbookname49 }}</option>
+        <option value="50">{{ page.locbookname50 }}</option>
+        <option value="51">{{ page.locbookname51 }}</option>
+        <option value="52">{{ page.locbookname52 }}</option>
+        <option value="53">{{ page.locbookname53 }}</option>
+        <option value="54">{{ page.locbookname54 }}</option>
+        <option value="55">{{ page.locbookname55 }}</option>
+        <option value="56">{{ page.locbookname56 }}</option>
+        <option value="57">{{ page.locbookname57 }}</option>
+        <option value="58">{{ page.locbookname58 }}</option>
+        <option value="59">{{ page.locbookname59 }}</option>
+        <option value="60">{{ page.locbookname60 }}</option>
+        <option value="61">{{ page.locbookname61 }}</option>
+        <option value="62">{{ page.locbookname62 }}</option>
+        <option value="63">{{ page.locbookname63 }}</option>
+        <option value="64">{{ page.locbookname64 }}</option>
+        <option value="65">{{ page.locbookname65 }}</option>
+      </select>
+      <select class="chapter-selector form-elem" name="chap">
+        <option value="001" selected="selected">{{ page.locchapterpref }}1{{ page.locchaptersuff }}
+        </option>
+        <option value="002">{{ page.locchapterpref }}2{{ page.locchaptersuff }}
+        </option>
+        <option value="003">{{ page.locchapterpref }}3{{ page.locchaptersuff }}
+        </option>
+        <option value="004">{{ page.locchapterpref }}4{{ page.locchaptersuff }}
+        </option>
+        <option value="005">{{ page.locchapterpref }}5{{ page.locchaptersuff }}
+        </option>
+        <option value="006">{{ page.locchapterpref }}6{{ page.locchaptersuff }}
+        </option>
+        <option value="007">{{ page.locchapterpref }}7{{ page.locchaptersuff }}
+        </option>
+        <option value="008">{{ page.locchapterpref }}8{{ page.locchaptersuff }}
+        </option>
+        <option value="009">{{ page.locchapterpref }}9{{ page.locchaptersuff }}
+        </option>
+        <option value="010">{{ page.locchapterpref }}10{{ page.locchaptersuff }}
+        </option>
+        <option value="011">{{ page.locchapterpref }}11{{ page.locchaptersuff }}
+        </option>
+        <option value="012">{{ page.locchapterpref }}12{{ page.locchaptersuff }}
+        </option>
+        <option value="013">{{ page.locchapterpref }}13{{ page.locchaptersuff }}
+        </option>
+        <option value="014">{{ page.locchapterpref }}14{{ page.locchaptersuff }}
+        </option>
+        <option value="015">{{ page.locchapterpref }}15{{ page.locchaptersuff }}
+        </option>
+        <option value="016">{{ page.locchapterpref }}16{{ page.locchaptersuff }}
+        </option>
+        <option value="017">{{ page.locchapterpref }}17{{ page.locchaptersuff }}
+        </option>
+        <option value="018">{{ page.locchapterpref }}18{{ page.locchaptersuff }}
+        </option>
+        <option value="019">{{ page.locchapterpref }}19{{ page.locchaptersuff }}
+        </option>
+        <option value="020">{{ page.locchapterpref }}20{{ page.locchaptersuff }}
+        </option>
+        <option value="021">{{ page.locchapterpref }}21{{ page.locchaptersuff }}
+        </option>
+        <option value="022">{{ page.locchapterpref }}22{{ page.locchaptersuff }}
+        </option>
+        <option value="023">{{ page.locchapterpref }}23{{ page.locchaptersuff }}
+        </option>
+        <option value="024">{{ page.locchapterpref }}24{{ page.locchaptersuff }}
+        </option>
+        <option value="025">{{ page.locchapterpref }}25{{ page.locchaptersuff }}
+        </option>
+        <option value="026">{{ page.locchapterpref }}26{{ page.locchaptersuff }}
+        </option>
+        <option value="027">{{ page.locchapterpref }}27{{ page.locchaptersuff }}
+        </option>
+        <option value="028">{{ page.locchapterpref }}28{{ page.locchaptersuff }}
+        </option>
+        <option value="029">{{ page.locchapterpref }}29{{ page.locchaptersuff }}
+        </option>
+        <option value="030">{{ page.locchapterpref }}30{{ page.locchaptersuff }}
+        </option>
+        <option value="031">{{ page.locchapterpref }}31{{ page.locchaptersuff }}
+        </option>
+        <option value="032">{{ page.locchapterpref }}32{{ page.locchaptersuff }}
+        </option>
+        <option value="033">{{ page.locchapterpref }}33{{ page.locchaptersuff }}
+        </option>
+        <option value="034">{{ page.locchapterpref }}34{{ page.locchaptersuff }}
+        </option>
+        <option value="035">{{ page.locchapterpref }}35{{ page.locchaptersuff }}
+        </option>
+        <option value="036">{{ page.locchapterpref }}36{{ page.locchaptersuff }}
+        </option>
+        <option value="037">{{ page.locchapterpref }}37{{ page.locchaptersuff }}
+        </option>
+        <option value="038">{{ page.locchapterpref }}38{{ page.locchaptersuff }}
+        </option>
+        <option value="039">{{ page.locchapterpref }}39{{ page.locchaptersuff }}
+        </option>
+        <option value="040">{{ page.locchapterpref }}40{{ page.locchaptersuff }}
+        </option>
+        <option value="041">{{ page.locchapterpref }}41{{ page.locchaptersuff }}
+        </option>
+        <option value="042">{{ page.locchapterpref }}42{{ page.locchaptersuff }}
+        </option>
+        <option value="043">{{ page.locchapterpref }}43{{ page.locchaptersuff }}
+        </option>
+        <option value="044">{{ page.locchapterpref }}44{{ page.locchaptersuff }}
+        </option>
+        <option value="045">{{ page.locchapterpref }}45{{ page.locchaptersuff }}
+        </option>
+        <option value="046">{{ page.locchapterpref }}46{{ page.locchaptersuff }}
+        </option>
+        <option value="047">{{ page.locchapterpref }}47{{ page.locchaptersuff }}
+        </option>
+        <option value="048">{{ page.locchapterpref }}48{{ page.locchaptersuff }}
+        </option>
+        <option value="049">{{ page.locchapterpref }}49{{ page.locchaptersuff }}
+        </option>
+        <option value="050">{{ page.locchapterpref }}50{{ page.locchaptersuff }}
+        </option>
+      </select>
+      <input class="read-on  btn  form-elem" name="submit1" value="{{ page.locformval }}" type="submit">
+    </form>
+  </div>
+  <div class="content-wrap">
+    <div class="content-container" id="nothing">
+    </div>
+  </div>
+  <div class="setting-panel">
+    <div class="range">
+      <h4 class="range-title setting-title"><i class="fa fa-font"></i>Change font size</h4>
+      <div class="range-control">
+        <input class="range-slide" type="range" min="10" max="80">
+        <span class="range-size">20px</span>
+      </div>
+    </div>
+    <ul class="setting-list  list-unstyled">
+      <li class="setting-item toggle-theme">
+        <h4 class="theme-title setting-title" href="#"><i class="fa fa-exchange"></i>Switch theme</h4>
+        <input class="toggle toggle-default" id="toggle-theme-btn" type="checkbox">
+        <label class="toggle-btn" for="toggle-theme-btn"></label>
+        <span class="setting-desc">Light text on a dark background</span>
+      </li>
+      <li class="setting-item toggle-verse-number">
+        <h4 class="verse-title setting-title" href="#"><i class="fa fa-list"></i>Toggle verse number</h4>
+        <input class="toggle toggle-default" id="toggle-verse-number-btn" type="checkbox">
+        <label class="toggle-btn" for="toggle-verse-number-btn"></label>
+        <span class="setting-desc">Verse number on</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="nav-bar">
+    <div id="link2" class="chapter-nav  main-chapter-nav">
+      <a class="prev  btn  btn-genernal  btn-large" href="" onclick="readchapter(' ', nowbook,--nowchapter); return false;">{{ page.locprev }}</a>
+      <a class="next  btn  btn-genernal  btn-large" href="" onclick="readchapter(' ', nowbook,++nowchapter); return false;">{{ page.locnext }}</a>
+    </div>
+
+    <div class="setting-wrap  tooltip-parent">
+      <div class="tooltip  tooltip-top  tooltip-left">Change settings</div>
+      <button class="setting-btn  btn  btn-genernal">
+        <i class="fa  fa-cog"></i>
+      </button>
+    </div>
+
+    <div class="toggle-light-wrap  tooltip-parent">
+      <div class="tooltip  tooltip-left  tooltip-top">Open black mode</div>
+      <button class="toggle-light  btn  btn-genernal">
+        <i class="fa  fa-lightbulb-o"></i>
+      </button>
+    </div>
+
+    <div class="toggle-light-wrap  tooltip-parent">
+      <div class="tooltip  tooltip-left  tooltip-top">Toggle reading mode</div>
+      <button class="toggle-reading-mode  btn  btn-genernal">
+        <i class="fa  fa-newspaper-o"></i>
+      </button>
+    </div>
+
+    <button class="top  btn  btn-genernal  btn-large">
+      <i class="fa  fa-chevron-up"></i>
+    </button>
+
+  </div>
+
+  <div class="reading-mode-controls">
+    <button class="reading-mode-controls  btn  btn-genernal"><i class="fa fa-times"></i></button>
+  </div>
+  <script src="build/js/lib.js"></script>
+  <script src="build/js/content-{{ page.id }}.js"></script>
+</body>
+
+</html>
