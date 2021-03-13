@@ -16,7 +16,7 @@
 <body id="mybody" onload="setachap()">
   <a name="top"></a>
   <div class="toolbar">
-    <div class="logo">{{site.data.meta[page.id].locsitetitle }}</div>
+    <div class="logo"><a href="/{{page.id}}" alt="Home">{{site.data.meta[page.id].locsitetitle }}</a></div>
     <form class="chapter-body" method="post" name="Reading" onsubmit="readchapter(' ', document.Reading.na.selectedIndex, document.Reading.chap.selectedIndex); return false;" action="">
       <select class="book-selector form-elem" name="na" onchange="setchap(Reading, this.selectedIndex, 1)">
       {% assign booknames = site.data.meta[page.id].booknames | split: ", " %}
