@@ -2,3 +2,7 @@ esperanto:
     booknames: Genezo, Eliro, Levidoj, Nombroj, Readmono, Josuo, Juĝistoj, Ruth, 1 Samuel, 2 Samuel, 1 Reĝoj, 2 Reĝoj, 1 Kronikoj, 2 Kronikoj, Ezra, Nehemiah, Libro de Ester, Ijobo, Psalmo, devizo, Ekleziulo, Kanto de Kantoj, Libro de Jesaja, Jeremia, Lamentoj pri Jeremia, Libro de Ezekiel, Daniel, Hosea, Libro de Joel, Libro de Amos, Obadiah, Jonah, Miicaa, Libro de Nahum, Habakuk, Cephaniah, Haggai, Libro de Zehxarja, Malachi, Evangelio laŭ Mateo, Evangelio de Marko, Luko, Evangelio de Johano, Agoj de la Apostoloj, Romanoj, 1 Korintanoj, 2 Korintanoj, Galatoj, Efesanoj, Filipianoj, Kolosianoj, Tesalonikanoj, 2 Tesalonikanoj, 1 Timoteo, 2 Timoteo, Tito, Filemono, Hebrea, Libro de Jakobo, Unua Peter, 2 Petro, Libro de 1 Johano, La Libro de Johano Du, John's Reference, Jude, Revelacio
     locchapterpref: "ĉapitro  "
     locchaptersuff: " "
+    locprev: Prev
+    locnext: Next
+    locformval: locformval
+

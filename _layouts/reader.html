@@ -29,7 +29,7 @@
         <option value="{{ forloop.index | prepend: '000' | slice: -3, 3 }}" {% if forloop.first %}selected="selected"{% endif %}> {{ site.data.meta[page.id].locchapterpref }}{{ chapter }}{{ site.data.meta[page.id].locchaptersuff }}</option>
       {% endfor %}
       </select>
-      <input class="read-on  btn  form-elem" name="submit1" value="{{ page.locformval }}" type="submit">
+      <input class="read-on  btn  form-elem" name="submit1" value="{{ site.data.meta[page.id].locformval }}" type="submit">
     </form>
   </div>
   <div class="content-wrap">
@@ -62,8 +62,8 @@
 
   <div class="nav-bar">
     <div id="link2" class="chapter-nav  main-chapter-nav">
-      <a class="prev  btn  btn-genernal  btn-large" href="" onclick="readchapter(' ', nowbook,--nowchapter); return false;">{{ page.locprev }}</a>
-      <a class="next  btn  btn-genernal  btn-large" href="" onclick="readchapter(' ', nowbook,++nowchapter); return false;">{{ page.locnext }}</a>
+      <a class="prev  btn  btn-genernal  btn-large" href="" onclick="readchapter(' ', nowbook,--nowchapter); return false;">{{ site.data.meta[page.id].locprev }}</a>
+      <a class="next  btn  btn-genernal  btn-large" href="" onclick="readchapter(' ', nowbook,++nowchapter); return false;">{{ site.data.meta[page.id].locnext }}</a>
     </div>
 
     <div class="setting-wrap  tooltip-parent">
