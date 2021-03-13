@@ -25,56 +25,9 @@
       {% endfor %}
       </select>
       <select class="chapter-selector form-elem" name="chap">
-        <option value="001" selected="selected">{{ page.locchapterpref }}1{{ page.locchaptersuff }}</option>
-        <option value="002">{{ page.locchapterpref }}2{{ page.locchaptersuff }}</option>
-        <option value="003">{{ page.locchapterpref }}3{{ page.locchaptersuff }}</option>
-        <option value="004">{{ page.locchapterpref }}4{{ page.locchaptersuff }}</option>
-        <option value="005">{{ page.locchapterpref }}5{{ page.locchaptersuff }}</option>
-        <option value="006">{{ page.locchapterpref }}6{{ page.locchaptersuff }}</option>
-        <option value="007">{{ page.locchapterpref }}7{{ page.locchaptersuff }}</option>
-        <option value="008">{{ page.locchapterpref }}8{{ page.locchaptersuff }}</option>
-        <option value="009">{{ page.locchapterpref }}9{{ page.locchaptersuff }}</option>
-        <option value="010">{{ page.locchapterpref }}10{{ page.locchaptersuff }}</option>
-        <option value="011">{{ page.locchapterpref }}11{{ page.locchaptersuff }}</option>
-        <option value="012">{{ page.locchapterpref }}12{{ page.locchaptersuff }}</option>
-        <option value="013">{{ page.locchapterpref }}13{{ page.locchaptersuff }}</option>
-        <option value="014">{{ page.locchapterpref }}14{{ page.locchaptersuff }}</option>
-        <option value="015">{{ page.locchapterpref }}15{{ page.locchaptersuff }}</option>
-        <option value="016">{{ page.locchapterpref }}16{{ page.locchaptersuff }}</option>
-        <option value="017">{{ page.locchapterpref }}17{{ page.locchaptersuff }}</option>
-        <option value="018">{{ page.locchapterpref }}18{{ page.locchaptersuff }}</option>
-        <option value="019">{{ page.locchapterpref }}19{{ page.locchaptersuff }}</option>
-        <option value="020">{{ page.locchapterpref }}20{{ page.locchaptersuff }}</option>
-        <option value="021">{{ page.locchapterpref }}21{{ page.locchaptersuff }}</option>
-        <option value="022">{{ page.locchapterpref }}22{{ page.locchaptersuff }}</option>
-        <option value="023">{{ page.locchapterpref }}23{{ page.locchaptersuff }}</option>
-        <option value="024">{{ page.locchapterpref }}24{{ page.locchaptersuff }}</option>
-        <option value="025">{{ page.locchapterpref }}25{{ page.locchaptersuff }}</option>
-        <option value="026">{{ page.locchapterpref }}26{{ page.locchaptersuff }}</option>
-        <option value="027">{{ page.locchapterpref }}27{{ page.locchaptersuff }}</option>
-        <option value="028">{{ page.locchapterpref }}28{{ page.locchaptersuff }}</option>
-        <option value="029">{{ page.locchapterpref }}29{{ page.locchaptersuff }}</option>
-        <option value="030">{{ page.locchapterpref }}30{{ page.locchaptersuff }}</option>
-        <option value="031">{{ page.locchapterpref }}31{{ page.locchaptersuff }}</option>
-        <option value="032">{{ page.locchapterpref }}32{{ page.locchaptersuff }}</option>
-        <option value="033">{{ page.locchapterpref }}33{{ page.locchaptersuff }}</option>
-        <option value="034">{{ page.locchapterpref }}34{{ page.locchaptersuff }}</option>
-        <option value="035">{{ page.locchapterpref }}35{{ page.locchaptersuff }}</option>
-        <option value="036">{{ page.locchapterpref }}36{{ page.locchaptersuff }}</option>
-        <option value="037">{{ page.locchapterpref }}37{{ page.locchaptersuff }}</option>
-        <option value="038">{{ page.locchapterpref }}38{{ page.locchaptersuff }}</option>
-        <option value="039">{{ page.locchapterpref }}39{{ page.locchaptersuff }}</option>
-        <option value="040">{{ page.locchapterpref }}40{{ page.locchaptersuff }}</option>
-        <option value="041">{{ page.locchapterpref }}41{{ page.locchaptersuff }}</option>
-        <option value="042">{{ page.locchapterpref }}42{{ page.locchaptersuff }}</option>
-        <option value="043">{{ page.locchapterpref }}43{{ page.locchaptersuff }}</option>
-        <option value="044">{{ page.locchapterpref }}44{{ page.locchaptersuff }}</option>
-        <option value="045">{{ page.locchapterpref }}45{{ page.locchaptersuff }}</option>
-        <option value="046">{{ page.locchapterpref }}46{{ page.locchaptersuff }}</option>
-        <option value="047">{{ page.locchapterpref }}47{{ page.locchaptersuff }}</option>
-        <option value="048">{{ page.locchapterpref }}48{{ page.locchaptersuff }}</option>
-        <option value="049">{{ page.locchapterpref }}49{{ page.locchaptersuff }}</option>
-        <option value="050">{{ page.locchapterpref }}50{{ page.locchaptersuff }}</option>
+      {% for chapter in (1..50) %}
+        <option value="{{ forloop.index | prepend: '000' | slice: -3, 3 }}" {% if forloop.first %}selected="selected"{% endif %} {{ site.data.meta[page.id].locchapterpref }}{{ chapter }}{{ site.data.meta[page.id].locchaptersuff }}></option>
+      {% endfor %}
       </select>
       <input class="read-on  btn  form-elem" name="submit1" value="{{ page.locformval }}" type="submit">
     </form>
