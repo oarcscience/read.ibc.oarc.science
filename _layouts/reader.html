@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ page.title }}</title>
+  <title>{{site.data.meta[page.id].locsitetitle }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
@@ -16,7 +16,7 @@
 <body id="mybody" onload="setachap()">
   <a name="top"></a>
   <div class="toolbar">
-    <div class="logo">{{ page.title }}</div>
+    <div class="logo">{{site.data.meta[page.id].locsitetitle }}</div>
     <form class="chapter-body" method="post" name="Reading" onsubmit="readchapter(' ', document.Reading.na.selectedIndex, document.Reading.chap.selectedIndex); return false;" action="">
       <select class="book-selector form-elem" name="na" onchange="setchap(Reading, this.selectedIndex, 1)">
       {% assign booknames = site.data.meta[page.id].booknames | split: ", " %}
