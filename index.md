@@ -5,7 +5,7 @@ title: Multilingual Bible Reader
 
 # Welcome to the [Institute for Biblical Content](https://ibc.oarc.science)'s Multilingual Bible Reader.
 
-## 
+## Persistent access point: [https://read.ibc.oarc.science](https://read.ibc.oarc.science)
 
 This engine hosts Bible translations in the following languages:
 
