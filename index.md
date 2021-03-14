@@ -9,7 +9,7 @@ title: Multilingual Bible Reader
 
 This engine hosts Bible translations in the following languages:
 
-{% for language in site.data.meta %}[{{language[0] | capitalize}}](/{{language[0]}}){% if forloop.last == false %},{% else %}.{% endif %}  {% endfor %} 
+### {% for language in site.data.meta %}[{{language[0] | capitalize}}](/{{language[0]}}){% if forloop.last == false %},{% else %}.{% endif %}  {% endfor %} 
 
 This engine responds to the two of IBC's Open Access challenges:
  - **Propagate existing content**. We replicate and host several existing Open Access Bible translations.
