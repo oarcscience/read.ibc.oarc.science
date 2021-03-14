@@ -3,7 +3,7 @@ layout: index
 title: Multilingual Bible Reader
 ---
 
-Welcome to the [Institute for Biblical Content](https://ibc.oarc.science)'s Multilingual Bible Reader.
+# Welcome to the [Institute for Biblical Content](https://ibc.oarc.science)'s Multilingual Bible Reader.
 
 This engine hosts Bible translations in the following languages:
 
