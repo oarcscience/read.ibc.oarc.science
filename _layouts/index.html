@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{page.title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="build/css/lib.css">
+  <link rel="stylesheet" href="build/css/bible.css">
+</head>
+
+<body id="mybody" onload="setachap()">
+  <a name="top"></a>
+  <div class="toolbar">
+    <div class="logo"><a href="/" alt="Home">Institute for Biblical Content</a></div>
+    {{ content }}
+  </div>
+  <div class="content-wrap">
+    <div class="content-container" id="nothing">
+    <br><br><br>
+      Please wait for content to load, then navigate.&nbsp;↑<br><br>
+      <span style="font-size:80%;">Institute for Biblical Content's Multilingual Bible Reader.<br>
+      <strong>{{page.id | capitalize}} recension.</strong></span>
+    </div>
+  </div>
+  <div class="setting-panel">
+    <div class="range">
+      <h4 class="range-title setting-title"><i class="fa fa-font"></i>Change font size</h4>
+      <div class="range-control">
+        <input class="range-slide" type="range" min="10" max="80">
+        <span class="range-size">20px</span>
+      </div>
+    </div>
+    <ul class="setting-list  list-unstyled">
+      <li class="setting-item toggle-theme">
+        <h4 class="theme-title setting-title" href="#"><i class="fa fa-exchange"></i>Switch theme</h4>
+        <input class="toggle toggle-default" id="toggle-theme-btn" type="checkbox">
+        <label class="toggle-btn" for="toggle-theme-btn"></label>
+        <span class="setting-desc">Light text on a dark background</span>
+      </li>
+      <li class="setting-item toggle-verse-number">
+        <h4 class="verse-title setting-title" href="#"><i class="fa fa-list"></i>Toggle verse number</h4>
+        <input class="toggle toggle-default" id="toggle-verse-number-btn" type="checkbox">
+        <label class="toggle-btn" for="toggle-verse-number-btn"></label>
+        <span class="setting-desc">Verse number on</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="nav-bar">
+    <div id="link2" class="chapter-nav  main-chapter-nav" style="display:flex;align-items:center;">
+      <a class="btn" href="" onclick="readchapter(' ', nowbook,--nowchapter); return false;">←</a>
+      <a class="btn" href="" onclick="readchapter(' ', nowbook,++nowchapter); return false;">→</a>
+    </div>
+
+
+    <div id="link2" class="chapter-nav  main-chapter-nav" style="display:flex;align-items:center;">
+      <a href="https://read.ibc.oarc.science" class="btn" style="margin:0.4rem;">IBC's&nbsp;Reader:&nbsp;main</a>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
