@@ -9,7 +9,8 @@ title: Multilingual Bible Reader
 
 This engine hosts Bible translations in the following languages:
 
-{% for language in site.data.meta %}[{{language[0] | capitalize}}](/{{language[0]}}), {% endfor %} 
+{% for language in site.data.meta %}[{{language[0] | capitalize}}](/{{language[0]}}){% if forloop.last == false %},{% else %}.{% endif %}  {% endfor %} 
+
 
 <span style="font-size:80%;">Institute for Biblical Content's Multilingual Bible Reader.<br>
       <strong>Chinese recension.</strong></span>
