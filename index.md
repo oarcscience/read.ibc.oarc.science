@@ -17,4 +17,6 @@ This engine responds to the two of IBC's Open Access challenges:
 
 #### Licencing and credits
 
+{% for language in site.data.meta %}**{{language[0] | capitalize}}**: {{language[1].licence}}{% if forloop.last == false %}<br>{% endif %}  {% endfor %}
+
 <br><br><br>
