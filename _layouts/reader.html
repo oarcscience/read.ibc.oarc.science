@@ -16,7 +16,7 @@
 <body id="mybody" onload="setachap()">
   <a name="top"></a>
   <div class="toolbar">
-    <div class="logo"><a href="/{{page.id}}" alt="Home">{{site.data.meta[page.id].locsitetitle }}</a></div>
+    <div class="logo"><a href="/{{page.id}}" alt="Home" style="font-size:80%;">Bible in {{page.id | capitalize}}</a></div>
     <form class="chapter-body" method="post" name="Reading" onsubmit="readchapter(' ', document.Reading.na.selectedIndex, document.Reading.chap.selectedIndex); return false;" action="">
       <select class="book-selector form-elem" name="na" onchange="setchap(Reading, this.selectedIndex, 1)">
       {% assign booknames = site.data.meta[page.id].booknames | split: ", " %}
@@ -71,6 +71,7 @@
 
     <div id="link2" class="chapter-nav  main-chapter-nav" style="display:flex;align-items:center;">
       <a href="https://ibc.oarc.science" class="btn" style="margin:0.4rem;">IBC's main site</a>
+      {{site.data.meta[page.id].locsitetitle }}
     </div>
 
 
