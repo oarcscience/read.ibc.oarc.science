@@ -14,3 +14,6 @@ This engine hosts Bible translations in the following languages:
 This engine responds to the two of IBC's Open Access challenges:
  - **Propagate existing content**. We replicate and host several existing Open Access Bible translations.
  - **Produce new content**. We produce Bible translations and release these into the Public Domain. We engage professional linguists and translators specializing in Hebrew, Aramaic and Greek as well as scholars of religion specializing in Judaism and Christianity.
+
+
+
