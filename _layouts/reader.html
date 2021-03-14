@@ -63,8 +63,8 @@
 
   <div class="nav-bar">
     <div id="link2" class="chapter-nav  main-chapter-nav">
-      <a class="prev  btn  btn-genernal  btn-large" href="" onclick="readchapter(' ', nowbook,--nowchapter); return false;">{{ site.data.meta[page.id].locprev }}</a>
-      <a class="next  btn  btn-genernal  btn-large" href="" onclick="readchapter(' ', nowbook,++nowchapter); return false;">{{ site.data.meta[page.id].locnext }}</a>
+      <a class="prev  btn  btn-genernal  btn-large" href="" onclick="readchapter(' ', nowbook,--nowchapter); return false;">←</a>
+      <a class="next  btn  btn-genernal  btn-large" href="" onclick="readchapter(' ', nowbook,++nowchapter); return false;">→</a>
     </div>
 
     <div class="setting-wrap  tooltip-parent">
@@ -89,14 +89,7 @@
     </div>
 
     <div id="link2" class="chapter-nav  main-chapter-nav" style="display:flex;align-items:center;">
-      <span class="btn" href="" style="background: unset;color: gray;">Some other translations at IBC: </span>
-      <a href="/{{page.neighb1}}" class="btn" style="margin:0.4rem;">{{page.neighb1 | capitalize}}</a>
-      <a href="/{{page.neighb2}}" class="btn" style="margin:0.4rem;">{{page.neighb2 | capitalize}}</a>
-    </div>
-
-    <div id="link2" class="chapter-nav  main-chapter-nav" style="display:flex;align-items:center;">
-      <span class="btn" href="" style="background: unset;color: gray;">Content provided by the Institute for Biblical Content, an Open Access initiative. </span>
-      <a href="https://ibc.oarc.science" class="btn" style="margin:0.4rem;">To the main site →</a>
+      <a href="https://ibc.oarc.science" class="btn" style="margin:0.4rem;">IBC's main site →</a>
     </div>
 
 
