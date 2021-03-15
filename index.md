@@ -21,6 +21,6 @@ This engine responds to the two of IBC's Open Access challenges:
 
 If not stated otherwise, the content is in the Public Domain.
 
-{% for language in site.data.meta %}{{language[0] | capitalize}}: {{language[1].licence | strip_html }}{% if forloop.last == false %}<br>{% endif %}  {% endfor %}
+{% for language in site.data.meta %}[{{language[0] | capitalize}}](/{{language[0]}}): {{language[1].licence | strip_html }}{% if forloop.last == false %}<br>{% endif %}  {% endfor %}
 
 <br><br><br>
