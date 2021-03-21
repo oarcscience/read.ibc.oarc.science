@@ -6,7 +6,7 @@
 /*{{bible["content"] | replace: "¤", ',' | replace: "◊", '"' }}*/
 
 
-/*{{bible}}*/
+/*{{bible[0]}}*/
 /*{{bible["ls"] }}*/
 /*{{bible["lscum"] }}*/
 /*{{bible["firsts"] }}*/
