@@ -1,0 +1,1 @@
+The `*.html` files in this directory are actually js files with content, but Jekyll's `datapage_gen` plugin won't allow `.js` templates in `_layouts`. They are imported in `reader.html` withing a `<script>...</script>`.
