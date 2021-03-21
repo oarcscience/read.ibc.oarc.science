@@ -23,3 +23,14 @@ nia Sinjoro kaj Savanto Jesuo Kristo**."
   locsearchquery: "搜尋經文─"
   locspacingpref: ""
   licence: "*Frederick W. Baller, C. Goodrich, Calvin Wilson Mateer, Spencer Lewis, and George Sydney Owen* (1919). **Chinese Union Version**."
+- id: swedish
+  source: Swedish__Swedish_(1917)__swedish__LTR.txt
+  booknames: 1 Mosebok, 2 Mosebok, 3 Mosebok, 4 Mosebok, 5 Mosebok, Josua, Domarboken, Rut, 1 Samuelsboken, 2 Samuelsboken, 1 Kungaboken, 2 Kungaboken, 1 Krönikeboken, 2 Krönikeboken, Esra, Nehemja, Ester, Job, Psaltaren, Ordspråksboken, Predikaren, Höga Visan, Jesaja, Jeremia, Klagovisorna, Hesekiel, Daniel, Hosea, Joel, Amos, Obadja, Jona, Mika, Nahum, Habackuk, Sefanja, Haggai, Sakaria, Malaki, Matteus, Markus, Lukas, Johannes, Apostlagärningarna, Romarbrevet, 1 Korinthierbrevet, 2 Korinthierbrevet, Galaterbrevet, Efesierbrevet, Filipperbrevet, Kolosserbrevet, 1 Thessalonikerbrevet, 2 Thessalonikerbrevet, 1 Timotheosbrevet, 2 Timotheosbrevet, Titusbrevet, Filemonbrevet, Hebreerbrevet, Jakobsbrevet, 1 Petrusbrevet, 2 Petrusbrevet, 1 Johannesbrevet, 2 Johannesbrevet, 3 Johannesbrevet, Judasbrevet1, Uppenbarelseboken
+  locchapterpref: "Kapitel "
+  locchaptersuff: " "
+  locformval: Gå! →
+  locpsalmcountword: ""
+  locpsalmbookname: "Psaltaren"
+  locsearchquery: "Sök i Skrifterna ─ "
+  locspacingpref: ": "
+  licence: "**Bibeln eller Den Den Heliga Skrifte**, *Översättiningen gillad och stadfäst av konungen år 1917*."
