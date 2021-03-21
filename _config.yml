@@ -7,7 +7,7 @@ page_gen:
   - data: 'meta'
     template: 'reader'
     name: 'id'
-    dir: ''
+    dir: '/'
 
 page_gen:
   - data: 'meta'
