@@ -9,7 +9,6 @@ page_gen:
     name: 'id'
     dir: '/'
 
-page_gen:
   - data: 'meta'
     template: 'content.js'
     name: 'id'
