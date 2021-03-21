@@ -1,10 +1,11 @@
+{% assign pagedata = site.data.meta | where: "id", page.id | first %}
 <!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{site.data.meta[page.id].locsitetitle }}</title>
+  <title>{{pagedata.locsitetitle }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
@@ -16,20 +17,20 @@
 <body id="mybody" onload="setachap()">
   <a name="top"></a>
   <div class="toolbar">
-    <div class="logo"><a href="/{{page.id}}" alt="Home" style="font-size:80%;">Bible in {{page.id | capitalize}}</a></div>
+    <div class="logo"><a href="/{{pagedata.id}}" alt="Home" style="font-size:80%;">Bible in {{pagedata.id | capitalize}}</a></div>
     <form class="chapter-body" method="post" name="Reading" onsubmit="readchapter(' ', document.Reading.na.selectedIndex, document.Reading.chap.selectedIndex); return false;" action="">
       <select class="book-selector form-elem" name="na" onchange="setchap(Reading, this.selectedIndex, 1)">
-      {% assign booknames = site.data.meta[page.id].booknames | split: ", " %}
+      {% assign booknames = pagedata.booknames | split: ", " %}
       {% for bookname in booknames %}
         <option value="{{ forloop.index0 }}" {% if forloop.first %}selected="selected"{% endif %} >{{ bookname }}</option>
       {% endfor %}
       </select>
       <select class="chapter-selector form-elem" name="chap">
       {% for chapter in (1..50) %}
-        <option value="{{ forloop.index | prepend: '000' | slice: -3, 3 }}" {% if forloop.first %}selected="selected"{% endif %}> {{ site.data.meta[page.id].locchapterpref }}{{ chapter }}{{ site.data.meta[page.id].locchaptersuff }}</option>
+        <option value="{{ forloop.index | prepend: '000' | slice: -3, 3 }}" {% if forloop.first %}selected="selected"{% endif %}> {{ pagedata.locchapterpref }}{{ chapter }}{{ pagedata.locchaptersuff }}</option>
       {% endfor %}
       </select>
-      <input class="read-on  btn  form-elem" name="submit1" value="{{ site.data.meta[page.id].locformval }}" type="submit">
+      <input class="read-on  btn  form-elem" name="submit1" value="{{ pagedata.locformval }}" type="submit">
     </form>
   </div>
   <div class="content-wrap">
@@ -37,7 +38,7 @@
     <br><br><br>
       Please wait for content to load, then navigate.&nbsp;↑<br><br>
       <span style="font-size:80%;">Institute for Biblical Content's Multilingual Bible Reader.<br>
-      <strong>{{page.id | capitalize}} recension.</strong></span>
+      <strong>{{pagedata.id | capitalize}} recension.</strong></span>
     </div>
   </div>
   <div class="setting-panel">
@@ -78,7 +79,7 @@
 
 
   <script src="build/js/lib.js"></script>
-  <script src="build/js/content-{{ page.id }}.js"></script>
+  <script src="build/js/content-{{ pagedata.id }}.js"></script>
 </body>
 
 </html>
