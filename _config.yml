@@ -11,6 +11,6 @@ page_gen:
 
 page_gen:
   - data: 'meta'
-    template: 'content'
+    template: 'content.js'
     name: 'id'
     dir: 'build/js'
