@@ -7,7 +7,7 @@ for f in glob.glob("_data/sources getbible-net/*.txt"):
     df.columns=["book","chapter","verse","content"]
     ls="¤".join(map(str,list(df[["book","chapter"]].groupby("book").agg(set)["chapter"].apply(len))))
     lscum="¤".join(map(str,[0]+list(df[["book","chapter"]].groupby("book").agg(set)["chapter"].apply(len).cumsum())))
-    firsts="¤".join(map(str,list(df[df["verse"]==1].index)))
+    firsts="¤".join(map(str,list(df[df["verse"]==1].index)+[df.shape[0]]))
     content="".join(df.apply(lambda x: '◊{}||{}||{} {}◊¤ '.format(x["book"],x["chapter"],x["verse"],x["content"]),axis=1))
     foutstring+="{},{},{},{},{}\n".format(f.split("/")[-1],ls,lscum,firsts,content.replace(",","¤"))
     print("Done.")
