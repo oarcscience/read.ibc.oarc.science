@@ -11,7 +11,7 @@ Persistent access point:
 
 This engine hosts Bible translations in the following languages:
 
-### {% for language in site.data.meta %}[{{language[0] | capitalize}}](/{{language[0]}}){% if forloop.last == false %},{% else %}.{% endif %}  {% endfor %} 
+### {% for language in site.data.meta %}[{{language.id | capitalize}}](/{{language.id}}){% if forloop.last == false %},{% else %}.{% endif %}  {% endfor %} 
 
 This engine responds to the two of IBC's Open Access challenges:
  - **Propagate existing content**. We replicate and host several existing Open Access Bible translations.
@@ -21,6 +21,6 @@ This engine responds to the two of IBC's Open Access challenges:
 
 If not stated otherwise, the content is in the Public Domain.
 
-{% for language in site.data.meta %}[{{language[0] | capitalize}}](/{{language[0]}}): {{language[1].licence | strip_html }}{% if forloop.last == false %}<br>{% endif %}  {% endfor %}
+{% for language in site.data.meta %}[{{language.id | capitalize}}](/{{language.id}}): {{language.licence | strip_html }}{% if forloop.last == false %}<br>{% endif %}  {% endfor %}
 
 <br><br><br>
