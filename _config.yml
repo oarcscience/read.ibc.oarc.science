@@ -5,6 +5,12 @@ plugins:
 
 page_gen:
   - data: 'meta'
-    template: 'profile'
-    name: 'full_name'
+    template: 'reader'
+    name: 'id'
     dir: ''
+
+page_gen:
+  - data: 'meta'
+    template: 'content'
+    name: 'id'
+    dir: 'build/js'
