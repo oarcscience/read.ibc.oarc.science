@@ -34,3 +34,14 @@ nia Sinjoro kaj Savanto Jesuo Kristo**."
   locsearchquery: "Sök i Skrifterna ─ "
   locspacingpref: ": "
   licence: "*Evangeliska fosterlandsstiftelsens bokförlag* (1917), **Bibeln eller Den Heliga Skrift**. Gamla och Nya Testamentet de Kanoniska Böckerna."
+- id: indonesian
+  source: indonesian.txt
+  booknames: Kejadian, Keluaran, Imamat, Bilangan, Ulangan, Yosua, Hakim-hakim, Rut, 1 Samuel, 2 Samuel, 1 Raja-raja, 2 Raja-raja, 1 Tawarikh, 2 Tawarikh, Ezra, Nehemia, Ester[i], Ayub, Mazmur, Amsal, Pengkhotbah, Kidung Agung, Yesaya, Yeremia, Ratapan, Yehezkiel, Daniel[p], Hosea, Yoel, Amos, Obaja, Yunus, Mikha, Nahum, Habakuk, Zefanya, Hagai, Zakharia, Maleakhi, Matius, Markus, Lukas, Yohanes, Kisah Para Rasul, Roma, 1 Korintus, 2 Korintus, Galatia, Efesus, Filipi, Kolose, 1 Tesalonika, 2 Tesalonika, 1 Timotius, 2 Timotius, Titus, Filemon, Ibrani, Yakobus, 1 Petrus, 2 Petrus, 1 Yohanes, 2 Yohanes, 3 Yohanes, Yudas, Wahyu
+  locchapterpref: "Bab "
+  locchaptersuff: " "
+  locformval: Pergi! →
+  locpsalmcountword: ""
+  locpsalmbookname: "Mazmur"
+  locsearchquery: "Cari di dalam Tulisan suci ─ "
+  locspacingpref: ": "
+  licence: "*Lembaga Alkitab Indonesia* (1985), **Alkitab Kabar Baik** atau Alkitab Bahasa Indonesia Sehari-hari (BIS)."
