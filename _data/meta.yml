@@ -46,7 +46,7 @@ nia Sinjoro kaj Savanto Jesuo Kristo**."
   locspacingpref: ": "
   licence: "*Lembaga Alkitab Indonesia* (1985), **Alkitab Kabar Baik** atau Alkitab Bahasa Indonesia Sehari-hari (BIS)."
 - id: french
-  source: français.csv
+  source: français.txt
   booknames: La Genèse, L’Exode, Le Lévitique, Les Nombres, Le Deutéronome, Josué, Les Juges, 1 Samuel, 2 Samuel, 1 Rois, 2 Rois, Isaïe, Jérémie, Ézéchiel, Osée, Joël, Amos, Obadia, Jonas, Michée, Nahoum, Habacuc, Cephania, Haggaï, Zacharie, Malachie, Les Psaumes, Les Proverbes, Job, Le Cantique des cantiques, Ruth, Les Lamentations, L’Ecclésiaste ou Qohélet, Esther, Daniel, Ezra, Néhémie, 1 Chroniques, 2 Chroniques
   locchapterpref: "Chapitre "
   locchaptersuff: " "
